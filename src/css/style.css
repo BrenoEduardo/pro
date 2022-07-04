@@ -12,6 +12,10 @@
 header h2 {
     font-size: clamp(0.2rem, 1rem + 0.75vw, 2rem);
   }
+.pprodut{
+    margin-left: 22%;
+    width: 60%;
+}
 header{
     background-image: url('../../public/img/fundo_header.png');
     padding: 0;
@@ -71,8 +75,12 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9);
+    transform: translate(-60%, -50%);
+    background-color: rgba(255, 255, 255, 0.603);
+}
+.myt {
+    margin-top: 5% !important;
+    margin-bottom: 2.5rem
 }
 .img_carrosel{
     position: relative;
@@ -84,8 +92,8 @@ p {
 }
 .botao {
     margin: 0px;
-    width: 80px;
-    height: 30px;
+    width: 15%;
+    height: 30%;
     color: white;
     background-color: #DA811A;
     border:none;
@@ -168,6 +176,9 @@ footer{
     right:0;
     clear:right
 }
+.flexwrap {
+    flex-wrap: wrap;
+}
 iframe {
     position: static;
 }
@@ -176,6 +187,12 @@ iframe {
 }
 .fundo_loja_movel {
     background-color: rgba(253, 214, 169, 0.7)
+}
+@media screen and (max-width: 768px){
+    .pprodut{
+        margin-left: 17%;
+        width: 60%;
+    }
 }
 @media screen and (min-width: 600px) {
     .botao {
@@ -186,7 +203,7 @@ iframe {
     }
     .forms {
         overflow: hidden;
-        margin-top: 7%;
+        margin: 0px !important;
         padding: 20px;
     }
    .forms-inp {
@@ -203,12 +220,29 @@ iframe {
         margin-bottom: 4%;
     }
 }
-
+@media screen and (min-width: 1600px){
+    .foto_wellington {
+        border-radius: 0%;
+        margin-bottom: 5%;
+        width: 50% !important;
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+    .img_van{
+        width: 100%;
+        margin-bottom: 7%;
+        margin-right: 7%;
+    }
+    .flexwrap{
+        flex-wrap: nowrap;
+    }
+}
 @media screen and (min-width:990px) {
     .container {
         padding-top: 10vh;
         padding-bottom: 10vh;
     }
+
     .caixa{
         width: 55vw;
         flex-direction: row;
@@ -262,6 +296,7 @@ iframe {
         flex-direction: column;
         align-items: center;
         font-size: 90%;
+        text-align: center;
     }
     .caixa{
         width: 55vw;
@@ -339,6 +374,10 @@ iframe {
         width: 90%;
         margin: 0px;
     }
+    .pprodut{
+        margin-left: 17%;
+        width: 60%;
+    }
 }
 .forms {
     overflow: hidden;
@@ -346,4 +385,10 @@ iframe {
 }
 .ml {
     margin-left: 5%;
+}
+.textinput{
+    text-align: center;
+}
+.padnone {
+    padding: 0px !important;
 }

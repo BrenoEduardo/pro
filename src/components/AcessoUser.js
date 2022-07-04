@@ -16,7 +16,7 @@ const AcessoUser= ({ submitted }) => {
 
   const exportar = () => {
     axios({
-      url: "https://dashboard.heroku.com/apps/jpw/clientes/export/excel",
+      url: "http://localhost:8080/",
       method: "GET",
       responseType: "blob",
 
