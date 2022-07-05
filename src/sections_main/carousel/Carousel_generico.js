@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import carousel from '../../json/carousel.json'
+import Flip from './Flip'
 
 export default class Carousel_generico extends Component {
     constructor(props){
@@ -8,9 +9,12 @@ export default class Carousel_generico extends Component {
     }
     render() {
         return (
-            <div class="div-img">
-                <div class="">
-                    <img src={this.state.carousel[this.props.id].img} class="img_carrosel"/>
+            <div>
+                <div className="d-flex">
+                    <Flip/>
+                    <Flip/>
+                    <Flip/>
+                    <Flip/>
                 </div>
             </div>
         );
